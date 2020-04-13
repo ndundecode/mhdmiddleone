@@ -1,3 +1,5 @@
 <?php
 require_once 'cores/config.php';
-require_once 'cores/connect.php';
+require_once 'cores/user.php'
+
+ $user = new User();

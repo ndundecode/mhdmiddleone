@@ -19,10 +19,8 @@ class Database{
 }//END CLASS
 
 
- $db = new Database();
+//  $db = new Database();
 
-if(!$db->conn->connect_error)
-  echo "connected";
-else die($db->conn->connect_error);
-
- // AppUrl = 'http://eglrdc.org/mhdmiddleone/api/'; // live link
+// if(!$db->conn->connect_error)
+//   echo "connected";
+// else die($db->conn->connect_error);

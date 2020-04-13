@@ -12,9 +12,10 @@ if (isset($postdata) && !empty($postdata)) {
 	$lName = ucwords(strtolower(trim($request->lName)));
 	$email = strtolower(trim($request->email));
 
-	//store
-	$conn->query("INSERT INTO `students`(`fName`, `lName`, `email`)
-					 VALUES ('$fName', '$lName','$email')");
+	
+	$response = $user->newUser($email, $firstname, $surname);
+    echo json_encode($response);
+
 }
 
 exit();
